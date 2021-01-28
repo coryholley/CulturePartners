@@ -35,5 +35,20 @@
     animation: rotate-vert-center 10s infinite;
 }
 
+#outside-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menuBtn {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border: black solid 5px;
+    border-radius: 50%;
+}
 
 
