@@ -19,10 +19,21 @@
     }
 }
 
+#mainContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
 #header-logo {
-    width: 20rem;
-    height: 20rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -280px;
+    margin-left: -280px;
+    max-width: 35rem;
+    height: 35rem;
     animation: rotate-vert-center 10s infinite;
 }
+
 
 
