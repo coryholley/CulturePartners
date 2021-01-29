@@ -18,6 +18,9 @@
         transform: rotateY(360deg);
     }
 }
+body, html {
+    background-color: #1b1818;
+}
 
 #mainContainer {
     width: 100vw;
@@ -49,6 +52,7 @@
     height: 10rem;
     border: black solid 5px;
     border-radius: 50%;
+    margin: 3rem 0;
 }
 
 
