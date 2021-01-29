@@ -27,6 +27,11 @@
     margin-left: 8%;
 }
 
+#spinnerContainer2 {
+    margin-top: 20%;
+    padding-left: 14%;
+}
+
 .spinner div {
     position: absolute;
     width: 120px;
