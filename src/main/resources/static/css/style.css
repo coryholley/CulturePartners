@@ -1,7 +1,3 @@
-body, html {
-    background-color: #1b1818;
-}
-
 #mainContainer {
     width: 100vw;
     height: 100vh;
@@ -26,48 +22,86 @@ body, html {
     height: 100vh;
 }
 
-.menuBtn {
-    position: relative;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    margin: 4rem 0;
+#spinnerContainer {
+    margin-top: 20%;
+    margin-left: 8%;
 }
 
-#button1 {
-    background: black;
-    border-radius: 100%;
-    background: radial-gradient(circle at 100px 100px, #df6448, #000);
+.spinner div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #df6448;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 0 20px rgb(243, 245, 239);
+    text-align: center;
+    line-height: 120px;
+    font-size: 100px;
 }
 
-#button2 {
-    background: black;
-    border-radius: 100%;
-    background: radial-gradient(circle at 100px 100px, #df6448, #000);
+.spinner .face1 {
+    -webkit-transform: translateZ(60px);
+    -ms-transform: translateZ(60px);
+    transform: translateZ(60px);
+}
+.spinner .face2 {
+    -webkit-transform: rotateY(90deg) translateZ(60px);
+    -ms-transform: rotateY(90deg) translateZ(60px);
+    transform: rotateY(90deg) translateZ(60px);
+}
+.spinner .face3 {
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+}
+.spinner .face4 {
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+}
+.spinner .face5 {
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+}
+.spinner .face6 {
+    -webkit-transform: rotateX(-90deg) translateZ(60px);
+    -ms-transform: rotateX(-90deg) translateZ(60px);
+    transform: rotateX(-90deg) translateZ(60px);
 }
 
-#button3 {
-    background: black;
-    border-radius: 100%;
-    background: radial-gradient(circle at 100px 100px, #df6448, #000);
+.spinner {
+    -webkit-animation: spincube 8s ease-in-out infinite;
+    animation: spincube 8s ease-in-out infinite;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
 }
 
-#button4 {
-    background: black;
-    border-radius: 100%;
-    background: radial-gradient(circle at 100px 100px, #df6448, #000);
+#cube1 {
+
 }
 
-#button5 {
-    background: black;
-    border-radius: 100%;
-    background: radial-gradient(circle at 100px 100px, #df6448, #000);
+#cube2 {
+
 }
 
-#button6 {
-    background: black;
-    border-radius: 100%;
-    background: radial-gradient(circle at 100px 100px, #df6448, #000);
+@-webkit-keyframes spincube {
+    16%      { -webkit-transform: rotateY(-90deg);                }
+    33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg); }
+    50%      { -webkit-transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -webkit-transform: rotateY(90deg) rotateX(90deg);  }
+    83%      { -webkit-transform: rotateX(90deg);                 }
+}
+@keyframes spincube {
+    16%      { -ms-transform: rotateY(-90deg); transform: rotateY(-90deg); }
+    33%      { -ms-transform: rotateY(-90deg) rotateZ(90deg); transform: rotateY(-90deg) rotateZ(90deg); }
+    50%      { -ms-transform: rotateY(180deg) rotateZ(90deg); transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -ms-transform: rotateY(90deg) rotateX(90deg); transform: rotateY(90deg) rotateX(90deg); }
+    83%      { -ms-transform: rotateX(90deg); transform: rotateX(90deg); }
 }
 
 @-webkit-keyframes rotate-vert-center {
